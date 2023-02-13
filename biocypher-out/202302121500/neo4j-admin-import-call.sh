@@ -1,1 +1,0 @@
-bin\neo4j-admin import --database=neo4j --delimiter="¦" --array-delimiter="|" --nodes="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302121500\BiologicalProcess-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302121500\BiologicalProcess-part.*" 

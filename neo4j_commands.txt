@@ -1,0 +1,9 @@
+
+
+
+bin\neo4j-admin database import full --delimiter="¦" --array-delimiter="|"  --nodes="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131446\OrganismTaxon-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131446\OrganismTaxon-part.*" --nodes="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131447\BiologicalProcess-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131447\BiologicalProcess-part.*" --nodes="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131448\BiologicalProcess-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131448\BiologicalProcess-part.*" --relationships="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131449\Subclass_of-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131449\Subclass_of-part.*" --relationships="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131450\Capable_of-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302131450\Capable_of-part.*"  neo4j
+
+
+CREATE CONSTRAINT FOR (o:OrganismTaxon) REQUIRE o.id IS UNIQUE;
+CREATE CONSTRAINT FOR (b:BiologicalProcess) REQUIRE b.id IS UNIQUE;
+
