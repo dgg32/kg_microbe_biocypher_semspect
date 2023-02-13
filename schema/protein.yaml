@@ -1,0 +1,4 @@
+protein:                            # mapping
+  represented_as: node              # schema configuration
+  preferred_id: uniprot             # uniqueness
+  label_in_input: uniprot_protein   # connection to input stream

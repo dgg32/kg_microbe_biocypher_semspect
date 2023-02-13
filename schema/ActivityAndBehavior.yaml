@@ -1,0 +1,6 @@
+BiologicalProcess:                            # mapping
+  represented_as: node              # schema configuration
+  preferred_id: ECOCORE             # uniqueness
+  label_in_input: biolink:ActivityAndBehavior   # connection to input stream
+  properties:
+    name: str
