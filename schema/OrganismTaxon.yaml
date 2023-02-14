@@ -1,6 +1,5 @@
 OrganismTaxon:                            # mapping
   represented_as: node              # schema configuration
-  preferred_id: NCBITaxon             # uniqueness
   label_in_input: biolink:OrganismTaxon   # connection to input stream
   properties:
     name: str

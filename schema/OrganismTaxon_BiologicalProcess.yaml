@@ -1,6 +1,5 @@
 organism taxon to entity association:
   represented_as: edge
-  preferred_id: id
   source: OrganismTaxon
   target: BiologicalProcess 
   label_in_input: biolink:capable_of

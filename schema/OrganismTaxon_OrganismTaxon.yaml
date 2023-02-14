@@ -1,6 +1,5 @@
-organism taxon to organism taxon association :
+organism taxon to organism taxon association:
   represented_as: edge
-  preferred_id: id
   source: OrganismTaxon
   target: OrganismTaxon 
   label_in_input: biolink:subclass_of
