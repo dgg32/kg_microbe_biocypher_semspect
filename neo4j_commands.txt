@@ -6,4 +6,3 @@ bin\neo4j-admin database import full --delimiter="¦" --array-delimiter="|"  --n
 
 CREATE CONSTRAINT FOR (o:OrganismTaxon) REQUIRE o.id IS UNIQUE;
 CREATE CONSTRAINT FOR (b:BiologicalProcess) REQUIRE b.id IS UNIQUE;
-
