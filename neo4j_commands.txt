@@ -1,8 +1,5 @@
 
 
-
-bin\neo4j-admin database import full --delimiter="¦" --array-delimiter="|"  --nodes="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141545\OrganismTaxon-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141545\OrganismTaxon-part.*" --nodes="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141550\BiologicalProcess-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141550\BiologicalProcess-part.*" --nodes="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141553\BiologicalProcess-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141553\BiologicalProcess-part.*" --relationships="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141554\Subclass_of-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141554\Subclass_of-part.*" --relationships="c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141556\Capable_of-header.csv,c:\Users\dgg32\Documents\biocypher\biocypher-out\202302141556\Capable_of-part.*"    neo4j
-
-
-CREATE CONSTRAINT FOR (o:OrganismTaxon) REQUIRE o.id IS UNIQUE;
-CREATE CONSTRAINT FOR (b:BiologicalProcess) REQUIRE b.id IS UNIQUE;
+bin/neo4j-admin database import full --delimiter=";" --array-delimiter="|" --nodes=/home/dgg32/Documents/kg_microbe_biocypher_semspect/biocypher-out/20240107010335/OrganismTaxon-.* --nodes=/home/dgg32/Documents/kg_microbe_biocypher_semspect/biocypher-out/20240107010354/BiologicalProcess-.* --nodes=/home/dgg32/Documents/kg_microbe_biocypher_semspect/biocypher-out/20240107010401/BiologicalProcess-.* --relationships=/home/dgg32/Documents/kg_microbe_biocypher_semspect/biocypher-out/20240107010406/Subclass_of-.* --relationships=/home/dgg32/Documents/kg_microbe_biocypher_semspect/biocypher-out/20240107010426/Capable_of-.* --quote="'" --overwrite-destination neo4j
+CREATE CONSTRAINT FOR (o:OrganismTaxon) REQUIRE o.name IS UNIQUE;
+CREATE CONSTRAINT FOR (b:BiologicalProcess) REQUIRE b.name IS UNIQUE;
