@@ -1,5 +1,6 @@
 BiologicalProcess:                            # mapping
   represented_as: node              # schema configuration
   label_in_input: biolink:BiologicalProcess   # connection to input stream
+  is_a: PhysiologicalProcess
   properties:
     name: str
