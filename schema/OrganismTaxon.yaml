@@ -1,6 +1,5 @@
-OrganismTaxon:                            # mapping
+organism taxon:                            # mapping
   represented_as: node              # schema configuration
   label_in_input: biolink:OrganismTaxon   # connection to input stream
-  is_a: OrganismalEntity
   properties:
     name: str

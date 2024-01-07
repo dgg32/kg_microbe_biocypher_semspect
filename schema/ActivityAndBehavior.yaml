@@ -1,6 +1,5 @@
-BiologicalProcess:                            # mapping
+biological process:                            # mapping
   represented_as: node              # schema configuration
   label_in_input: biolink:ActivityAndBehavior   # connection to input stream
-  is_a: MolecularActivity
   properties:
     name: str
